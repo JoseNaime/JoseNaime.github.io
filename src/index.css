@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
 :root {
-	--dark_background : #0B0B0E;
+	--dark_background      : #0B0B0E;
 	--dark_blue_background : #121217;
-	--white           : #F0F0F0;
-	--light_gray      : #C1C1C1;
-	--gray            : #9CA3AF;
-	--dark_gray       : #818181;
-	--light_blue      : #39B8FF;
-	--blue            : #3279E2
+	--white                : #F0F0F0;
+	--light_gray           : #C1C1C1;
+	--gray                 : #9CA3AF;
+	--dark_gray            : #818181;
+	--light_blue           : #39B8FF;
+	--blue                 : #3279E2
 }
 
 body {
@@ -33,7 +33,7 @@ svg {
 }
 
 h1, h2, h3, h4, h5, h6, p {
-	margin  : 0
+	margin : 0
 }
 
 p {
@@ -53,8 +53,16 @@ h2 {
 	font-weight : 350;
 }
 
+h2.title {
+	font-weight             : 800;
+	background              : -webkit-linear-gradient(45deg, var(--light_blue), var(--blue));
+	-webkit-background-clip : text;
+	-webkit-text-fill-color : transparent;
+	padding-bottom          : 15px;
+}
+
 h6 {
-	color     : var(--dark_gray);
-	font-size : 1rem;
+	color       : var(--dark_gray);
+	font-size   : 1rem;
 	font-weight : 350;
 }

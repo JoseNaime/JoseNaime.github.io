@@ -13,8 +13,9 @@ function Landpage({asideText}) {
                     <SocialMedias/>
                 </div>
                 <h2>Software Engineer</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum augue hendrerit lacus condimentum
-                    aenean lectus cras diam. Orci, libero amet id amet. Sociis faucibus id pharetra aliquet.</p>
+                <p>With 2+ years of experience in web development, I am working with the MERN stack and looking to
+                    further integration with ML and AI. Passionate about technology and looking for a new
+                    opportunity.</p>
             </div>
             <div id="scroll-down">
                 <h6>Scroll Down</h6>

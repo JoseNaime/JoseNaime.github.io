@@ -1,5 +1,6 @@
 import './App.css';
 import Landpage from "./Components/Landpage";
+import AboutMe from "./Components/AboutMe";
 import MarkdownPopup from "./Components/MarkdownPopup";
 import {useState} from "react";
 
@@ -9,10 +10,13 @@ function App() {
 
     const toggleMarkdownPopup = () => {
         setDisplayMarkdownPopup(!displayMarkdownPopup);
+
     }
 
     const handleProjectClick = (link) => {
         setMarkdownLink(link);
+        console.log("Popup oppened")
+        document.getElementById("markdown").scroll(0,0)
         toggleMarkdownPopup();
     }
 
@@ -24,10 +28,9 @@ function App() {
                     url={markdownLink}
                     displayMarkdownPopup={displayMarkdownPopup}
                     handleClosePopupClick={toggleMarkdownPopup}/>
+
                 <Landpage asideText={"Home"}/>
-                <h3 onClick={() => handleProjectClick("https://raw.githubusercontent.com/JoseNaime/Real-Time-Bus-Tracker/master/README.md")}>Project 1</h3>
-                <h3 onClick={() => handleProjectClick("https://raw.githubusercontent.com/JoseNaime/Chrome-Extension/master/README.md")}>Project 2</h3>
-                <h3 onClick={() => handleProjectClick("https://raw.githubusercontent.com/JoseNaime/EasyPlaylist/master/README.md")}>Project 3</h3>
+                <AboutMe asideText={"About"} handleProjectClick={handleProjectClick}/>
 
             </div>
         </div>
