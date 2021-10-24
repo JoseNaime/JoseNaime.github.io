@@ -27,9 +27,17 @@ code {
 	monospace;
 }
 
+section{
+	margin: 8em 0;
+}
+
 svg {
 	color : var(--white);
 	fill  : var(--white);
+}
+
+b{
+	color: var(--light_blue);
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -45,6 +53,8 @@ h1 {
 	background              : -webkit-linear-gradient(45deg, var(--light_blue), var(--blue));
 	-webkit-background-clip : text;
 	-webkit-text-fill-color : transparent;
+	transition              : all 1s;
+
 }
 
 h2 {
