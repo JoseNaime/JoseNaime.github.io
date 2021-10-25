@@ -1,6 +1,7 @@
 import React from 'react';
 import Emoji from './Emoji'
 import portfolioImage from '../Assets/Images/Web_Face_JN.jpg'
+import Experience from './Experience'
 
 /*const badgesLinks = [
     "https://img.shields.io/badge/React-Intermediate-blue",
@@ -33,8 +34,8 @@ function AboutMe({asideText, handleProjectClick}) {
                         <br/>
                         <p>
                             Since then, I've developed multiple projects in my free time, and I keep learning more about
-                            the
-                            MERN stack <b>(MongoDB, Express, React, and Node)</b>.
+                            web technologies, currently I'm working with the
+                            <b> MERN</b> stack <b>(MongoDB, Express, React, and Node)</b> and looking forward to learning more about mobile development.
                         </p>
                         <br/>
                         <p><b>Facts about me:</b></p>
@@ -48,6 +49,8 @@ function AboutMe({asideText, handleProjectClick}) {
                     </div>
                     <img src={portfolioImage} alt={"Jose Naime"}/>
                 </div>
+
+                <Experience/>
 
 
 

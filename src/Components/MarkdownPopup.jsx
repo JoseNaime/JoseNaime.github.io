@@ -18,7 +18,7 @@ function MarkdownPopup({url, handleClosePopupClick, displayMarkdownPopup}) {
                 <FontAwesomeIcon className="popup-close" icon={faTimesCircle} size={"2x"}
                                  onClick={handleClosePopupClick}/>
                 {loading ?
-                    <div id="markdown">
+                    <div id="markdown-popup">
                         <ReactMarkdown
                             children={file}
                             remarkPlugins={[remarkGfm]}/>

@@ -1,3 +1,8 @@
+@keyframes fadeIn{
+	from {opacity:0}
+	to{opacity:1}
+}
+
 aside {
 	color     : var(--gray);
 	position  : absolute;
@@ -11,16 +16,16 @@ aside {
 }
 
 .popup-wrapper {
-	z-index  : 10000;
-	width    : 100%;
-	position : fixed;
-	height   : 100%;
-	left     : 0;
-	pointer-events: none;
+	z-index        : 10000;
+	width          : 100%;
+	position       : fixed;
+	height         : 100%;
+	left           : 0;
+	pointer-events : none;
 }
 
-.popup-wrapper > *{
-	pointer-events: auto;
+.popup-wrapper > * {
+	pointer-events : auto;
 }
 
 .flex {
@@ -33,25 +38,25 @@ aside {
 	justify-content : space-between;
 }
 
-.badges-list{
-	width: 100%;
-	gap: 10px;
-	padding: 0;
-	display : flex;
+.badges-list {
+	width           : 100%;
+	gap             : 10px;
+	padding         : 0;
+	display         : flex;
 	list-style-type : none;
-	margin: 0 0 10px 0;
+	margin          : 0 0 10px 0;
 }
 
 .blur-background {
 	position        : fixed;
-	top: 0;
-	left: 0;
+	top             : 0;
+	left            : 0;
 	z-index         : 100;
 	backdrop-filter : blur(5px);
 	width           : 100%;
 	height          : 100%;
-	pointer-events : none;
-	transition: all 1s;
+	pointer-events  : none;
+	transition      : all 1s;
 }
 
 .blur-background.hidden {
@@ -61,7 +66,7 @@ aside {
 .popup-container {
 	display          : flex;
 	position         : absolute;
-	box-shadow: 0px 5px 10px rgba(0, 0, 0, .7);
+	box-shadow       : 0px 5px 10px rgba(0, 0, 0, .7);
 	z-index          : 1000;
 	padding          : 40px;
 	height           : 80vh;
@@ -71,13 +76,13 @@ aside {
 	left             : 50%;
 	transform        : translate(-50%, -50%);
 	overflow         : hidden;
-	transition: all 1s;
-	opacity: 1
+	transition       : all 1s;
+	opacity          : 1
 }
 
 .popup-container.hidden {
-	left: -150%;
-	opacity: 0;
+	left    : -150%;
+	opacity : 0;
 }
 
 .popup-close {
@@ -135,57 +140,124 @@ aside {
 	margin : auto;
 }
 
-#about .info-container{
-	position: relative;
-	display: inline-flex;
-	justify-content: space-between;
+#about .info-container {
+	position        : relative;
+	display         : inline-flex;
+	justify-content : space-between;
 }
 
-#about .info-container ul{
-	margin-top: 5px;
+#about .info-container ul {
+	margin-top : 5px;
 }
 
-#about .info-container img{
-	border-radius: 10px;
-	position: absolute;
-	right: -50px;
-	width: 250px;
-	height: 250px;
-	box-shadow: 15px 15px var(--light_blue)
+#about .info-container img {
+	border-radius : 10px;
+	position      : absolute;
+	right         : -50px;
+	width         : 250px;
+	height        : 250px;
+	box-shadow    : 15px 15px var(--light_blue)
 }
 
-#about .info-container .info{
-	width: 65%;
+#about .info-container .info {
+	width : 65%;
 }
 
-#markdown {
+#experience {
+	width: 90%;
+	margin : 10rem auto;
+}
+
+#experience hr{
+	border-color: var(--dark_gray);
+}
+
+#experience .options {
+	display : inline-flex;
+	gap     : 30px;
+}
+
+#experience .active {
+	color : var(--light_blue);
+}
+
+#experience .container {
+	display    : inline-flex;
+	margin-top : 10px;
+}
+
+#experience button {
+	color            : var(--gray);
+	padding          : 0;
+	font-size        : 1.6rem;
+	font-weight      : bold;
+	background-color : transparent;
+	border           : 0;
+}
+
+#experience .container > ul {
+	padding    : 0;
+	margin     : 5px 0 0 0;
+	width      : 20%;
+	list-style : none;
+}
+
+#experience .container > ul li {
+	padding-left : 1rem;
+	border-left  : 1px solid var(--gray);
+	font-weight  : normal;
+	transition   : all .5s;
+}
+
+#experience .container > ul li.active {
+	border-left : 5px solid var(--light_blue);
+}
+
+#experience .container > ul h3 {
+	padding     : 0.5rem 0;
+	font-weight : normal;
+}
+
+#experience .container .markdown {
+	width : 80%;
+}
+
+.markdown > *{
+	animation: fadeIn 1s forwards;
+}
+
+.markdown h1 {
+	font-size : 2rem;
+}
+
+#markdown-popup {
 	flex       : 1;
 	margin-top : 25px;
 	overflow   : scroll;
 }
 
-#markdown h1 {
+#markdown-popup h1 {
 	padding-bottom : .3em;
 	font-size      : 2rem;
 	border-bottom  : 1px solid var(--dark_gray);
 }
 
-#markdown h2 {
+#markdown-popup h2 {
 	padding-bottom : .3em;
 	font-size      : 1.5rem;
 	border-bottom  : 1px solid var(--dark_gray);
 }
 
-#markdown p {
+#markdown-popup p {
 	margin : 1rem 0;
 }
 
-#markdown img {
+#markdown-popup img {
 	width : 100%;
 }
 
-#markdown::-webkit-scrollbar {
-	display: none;
+#markdown-popup::-webkit-scrollbar {
+	display : none;
 }
 
 @media (max-width : 768px) {
