@@ -26,6 +26,11 @@ const education = [
         
 * Using MongoDb, Express, React and Node as web development stack.
 * Applying DevOps to projects, by testing with Jest and developing in Git with Github
+
+#### Some projects I've developed:
+* [Real Time Bus Tracker](https://josenaime-realtimebustracker.netlify.app/)
+* [PacMen](https://josenaime-pacmen.netlify.app/)
+* [Eyes](https://josenaime-eyes.netlify.app/)
 `
     }
 ];

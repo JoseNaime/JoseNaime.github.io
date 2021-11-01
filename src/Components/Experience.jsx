@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import ReactMarkdown from 'react-markdown'
 import educationData from '../Assets/Data/Experience/Education'
 import workData from '../Assets/Data/Experience/Work'
