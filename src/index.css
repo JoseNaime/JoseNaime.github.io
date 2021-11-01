@@ -3,6 +3,7 @@
 :root {
 	--dark_background      : #0B0B0E;
 	--dark_blue_background : #121217;
+	--dark_blue            : #15151e;
 	--white                : #F0F0F0;
 	--light_gray           : #C1C1C1;
 	--gray                 : #9CA3AF;
@@ -27,8 +28,8 @@ code {
 	monospace;
 }
 
-section{
-	margin: 8em 0;
+section {
+	margin : 8em 0;
 }
 
 svg {
@@ -36,11 +37,12 @@ svg {
 	fill  : var(--white);
 }
 
-b{
-	color: var(--light_blue);
+b {
+	color : var(--light_blue);
 }
 
 h1, h2, h3, h4, h5, h6, p {
+	text-rendering: optimizeLegibility;
 	margin : 0
 }
 
@@ -54,17 +56,16 @@ h1 {
 	-webkit-background-clip : text;
 	-webkit-text-fill-color : transparent;
 	transition              : all 1s;
-
+	
 }
 
 h2 {
 	color       : var(--light_gray);
 	font-size   : 2rem;
-	font-weight : 350;
+	font-weight : 400;
 }
 
 h2.title {
-	font-weight             : 800;
 	background              : -webkit-linear-gradient(45deg, var(--light_blue), var(--blue));
 	-webkit-background-clip : text;
 	-webkit-text-fill-color : transparent;

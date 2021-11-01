@@ -5,9 +5,9 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 function SocialMedias() {
     return (
         <div className={"social-medias"}>
-            <FontAwesomeIcon icon={faGithub} size="2x"/>
-            <FontAwesomeIcon icon={faLinkedinIn} size="2x"/>
-            <FontAwesomeIcon icon={faTwitter} size="2x"/>
+            <a href={"https://github.com/JoseNaime"} target={"_blank"}><FontAwesomeIcon icon={faGithub} size="2x"/></a>
+            <a href={"https://www.linkedin.com/in/jose-naime"} target={"_blank"}><FontAwesomeIcon icon={faLinkedinIn} size="2x"/></a>
+            <a href={"https://twitter.com/JoseNaime_DEV"} target={"_blank"}><FontAwesomeIcon icon={faTwitter} size="2x"/></a>
         </div>
     );
 }

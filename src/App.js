@@ -1,8 +1,9 @@
 import './App.css';
+import {useState} from "react";
 import Landpage from "./Components/Landpage";
 import AboutMe from "./Components/AboutMe";
 import MarkdownPopup from "./Components/MarkdownPopup";
-import {useState} from "react";
+import ProjectsSection from "./Components/ProjectsSection";
 
 function App() {
     const [displayMarkdownPopup, setDisplayMarkdownPopup] = useState(false);
@@ -16,7 +17,7 @@ function App() {
     const handleProjectClick = (link) => {
         setMarkdownLink(link);
         console.log("Popup oppened")
-        document.getElementById("markdown").scroll(0,0)
+        document.getElementById("markdown-popup-content").scroll(0,0)
         toggleMarkdownPopup();
     }
 
@@ -30,9 +31,13 @@ function App() {
                     handleClosePopupClick={toggleMarkdownPopup}/>
 
                 <Landpage asideText={"Home"}/>
-                <AboutMe asideText={"About"} handleProjectClick={handleProjectClick}/>
+                <AboutMe asideText={"About"} />
+                <ProjectsSection asideText={"Projects"} handleProjectClick={handleProjectClick}/>
+
 
             </div>
+            <div id="top-gradient"/>
+            <div id="bottom-gradient"/>
         </div>
     );
 }

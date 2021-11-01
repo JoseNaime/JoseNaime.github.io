@@ -13,12 +13,12 @@ function MarkdownPopup({url, handleClosePopupClick, displayMarkdownPopup}) {
         .then(content => content.text()).then(text => setFile(text)).then(() => loading = false);
 
     return (
-        <div  className='popup-wrapper'>
+        <div id="markdown-popup" className='popup-wrapper'>
             <div className={`wrapper popup-container ${displayMarkdownPopup ? "" : "hidden"}`}>
                 <FontAwesomeIcon className="popup-close" icon={faTimesCircle} size={"2x"}
                                  onClick={handleClosePopupClick}/>
                 {loading ?
-                    <div id="markdown-popup">
+                    <div id="markdown-popup-content">
                         <ReactMarkdown
                             children={file}
                             remarkPlugins={[remarkGfm]}/>

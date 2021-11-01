@@ -1,25 +1,41 @@
 import React from 'react';
 import personalProjects from "../Assets/Data/Personal_Projects.js"
+import FeaturedProject from "./Projects/FeaturedProject";
+import Project from "./Projects/Project"
 
-function Projects({asideText}) {
+function ProjectsSection({asideText, handleProjectClick}) {
     const featuredProjects = personalProjects.filter(project => project.isFeatured);
     const otherProjects = personalProjects.filter(project => !project.isFeatured);
 
     return (
-        <div>
-        <section id="featured-projects">
-            <div className="container">
-                <aside># {asideText}</aside>
-                <h2 className={"title"}>Featured Projects</h2>
+        <section id={"projects"}>
+            <aside># {asideText}</aside>
+
+            <div id="featured-projects">
+                <div className="container">
+                    <h2 className={"title"}>Featured Projects</h2>
+
+
+                    {featuredProjects.map((featuredProject, i) => {
+                        return <FeaturedProject handleProjectClick={handleProjectClick}
+                                                projectInfo={featuredProject}
+                                                key={"featuredProject_" + i}
+                        />
+                    })}
+                </div>
+            </div>
+            <div id="projects">
+                <div className="container">
+                    <h2 className={"title"}>Other Projects</h2>
+
+                    {otherProjects.map((project, i) => {
+                        return <Project handleProjectClick={handleProjectClick}
+                                        projectInfo={project} key={"featuredProject_" + i}/>
+                    })}
+                </div>
             </div>
         </section>
-        <section id="projects">
-            <div className="container">
-                <h2 className={"title"}>Other Projects</h2>
-            </div>
-        </section>
-        </div>
     );
 }
 
-export default Projects;
+export default ProjectsSection;
