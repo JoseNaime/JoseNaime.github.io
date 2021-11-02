@@ -23,14 +23,47 @@ const personalProjects = [
     },
     {
         isFeatured: false,
-        image: null,
-        title: "Bus Tracker",
+        image: "GuessTheNumber.png",
+        title: "Guess The Number",
         date: "Mar 2021 – Apr 2021",
-        technologies: ["React.js", "CSS", "JavaScript", "Spotify API"],
+        technologies: ["React.js", "React Router", "CSS", "JavaScript"],
+        description: "In this web app, you have to guess the random generated number",
+        markdownLink: "https://raw.githubusercontent.com/JoseNaime/GuessTheNumber/master/README.md",
+        githubURL: "https://github.com/JoseNaime/GuessTheNumber",
+        websiteURL: "https://josenaime-guessthenumber.netlify.app"
+    },
+    {
+        isFeatured: false,
+        image: "BusTracker.png",
+        title: "Bus Tracker",
+        date: "Oct 2021 – Oct 2021",
+        technologies: ["React.js", "CSS", "JavaScript", "Mapbox API", "MBTA API"],
         description: "This project helps you to follow the track of one of the busses passing through MIT and Harvard. Select one track id from the left menu and follow the trajectory in realtime",
-        markdownLink: "https://raw.githubusercontent.com/JoseNaime/EasyPlaylist/master/README.md",
+        markdownLink: "https://raw.githubusercontent.com/JoseNaime/Real-Time-Bus-Tracker/master/README.md",
         githubURL: "https://github.com/JoseNaime/Real-Time-Bus-Tracker",
         websiteURL: "https://josenaime-realtimebustracker.netlify.app"
+    },
+    {
+        isFeatured: false,
+        image: "PacMen.png",
+        title: "Pac Men",
+        date: "Sep 2021 – Sep 2021",
+        technologies: ["HTML", "CSS", "JavaScript"],
+        description: "What if Pac-man was able to move freely? Or better, what if a ton of Pac-men were able to do it?",
+        markdownLink: "https://raw.githubusercontent.com/JoseNaime/PacMen/master/README.md",
+        githubURL: "https://github.com/JoseNaime/PacMen",
+        websiteURL: "https://josenaime-pacmen.netlify.app"
+    },
+    {
+        isFeatured: false,
+        image: "Eyes.png",
+        title: "Eyes",
+        date: "Oct 2021 – Oct 2021",
+        technologies: ["HTML", "CSS", "JavaScript"],
+        description: "Two eyes will follow your mouse cursor while you move it around.",
+        markdownLink: "https://raw.githubusercontent.com/JoseNaime/Eyes/master/README.md",
+        githubURL: "https://github.com/JoseNaime/Eyes",
+        websiteURL: "https://josenaime-eyes.netlify.app"
     }
 ];
 

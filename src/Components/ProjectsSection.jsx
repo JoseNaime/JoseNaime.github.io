@@ -27,11 +27,12 @@ function ProjectsSection({asideText, handleProjectClick}) {
             <div id="projects">
                 <div className="container">
                     <h2 className={"title"}>Other Projects</h2>
-
-                    {otherProjects.map((project, i) => {
-                        return <Project handleProjectClick={handleProjectClick}
-                                        projectInfo={project} key={"featuredProject_" + i}/>
-                    })}
+                    <div className={"projects-grid"}>
+                        {otherProjects.map((project, i) => {
+                            return <Project handleProjectClick={handleProjectClick}
+                                            projectInfo={project} key={"project_" + i} />
+                        })}
+                    </div>
                 </div>
             </div>
         </section>

@@ -14,8 +14,14 @@ function FeaturedProject({projectInfo, handleProjectClick}) {
                         <h6>{projectInfo.date}</h6>
                     </div>
                     <div className={"featured-project__links"}>
-                        {projectInfo.githubURL ? <a href={projectInfo.githubURL} target={"_blank"}><FontAwesomeIcon  icon={faGithub} size="2x"/></a> : ""}
-                        {projectInfo.websiteURL ? <a href={projectInfo.websiteURL} target={"_blank"}><FontAwesomeIcon icon={faGlobe} size="2x"/></a> : ""}
+                        {projectInfo.githubURL ? <a href={projectInfo.githubURL}
+                                                    target={"_blank"}
+                                                    rel="noreferrer">
+                            <FontAwesomeIcon  icon={faGithub} size="2x"/></a> : ""}
+                        {projectInfo.websiteURL ? <a href={projectInfo.websiteURL}
+                                                     target={"_blank"}
+                                                     rel="noreferrer">
+                            <FontAwesomeIcon icon={faGlobe} size="2x"/></a> : ""}
                     </div>
                 </header>
                 <div className={"featured-project__description"}>
