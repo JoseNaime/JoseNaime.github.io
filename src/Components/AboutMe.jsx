@@ -44,7 +44,7 @@ function AboutMe({asideText, handleProjectClick}) {
                             <li><p><Emoji symbol="🌙"/> - I love space related themes.</p></li>
                             <li><p><Emoji symbol="🔶"/> - Orange is my favorite color.</p></li>
                             <li><p><Emoji symbol="👾"/> - Playing video games with friends is something I enjoy.</p></li>
-                            <li><p><Emoji symbol="🕷"/> - I'm not a big fan of insect, and if they fly it's worse...</p></li>
+                            <li><p><Emoji symbol="🕷"/> - I'm not a big fan of insects, and if they fly it's worse...</p></li>
                         </ul>
                     </div>
                     <img src={portfolioImage} alt={"Jose Naime"}/>
