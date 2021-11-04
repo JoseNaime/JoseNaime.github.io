@@ -493,7 +493,7 @@ nav p.active {
 	background : linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
 }
 
-footer {
+footer#main-footer {
 	height     : 60px;
 	text-align : center;
 }

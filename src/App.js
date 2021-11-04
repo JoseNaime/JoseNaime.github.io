@@ -51,7 +51,7 @@ function App() {
                 <Landpage asideText={"Home"} />
                 <AboutMe asideText={"About"} />
                 <ProjectsSection asideText={"Projects"} handleProjectClick={handleProjectClick} />
-                <Footer />
+                <Footer/>
             </div>
 
             <a id={"email__Desktop"} className={"email"} href="mailto:josep.naimeg@gmail.com">josep.naimeg@gmail.com
