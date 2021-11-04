@@ -32,6 +32,10 @@ code {
 	monospace;
 }
 
+nav ul{
+	list-style-type: none;
+}
+
 section {
 	margin : 8em 0;
 }
