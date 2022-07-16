@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+:root {
+	--dark_background      : #0B0B0E;
+	--dark_blue_background : #121217;
+	--dark_blue            : #15151e;
+	--white                : #F0F0F0;
+	--light_gray           : #C1C1C1;
+	--gray                 : #9CA3AF;
+	--dark_gray            : #818181;
+	--light_blue           : #39B8FF;
+	--blue                 : #3279E2
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin                  : 0;
+	font-family             : "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+	"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+	sans-serif;
+	-webkit-font-smoothing  : antialiased;
+	-moz-osx-font-smoothing : grayscale;
+	background-color        : var(--dark_background);
+	color                   : var(--white);
+}
+
+code {
+	font-family : source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+	monospace;
+}
+
+nav ul{
+	list-style-type: none;
+}
+
+section {
+	margin : 8em 0;
+}
+
+svg {
+	color : var(--white);
+	fill  : var(--white);
+}
+
+b {
+	color : var(--light_blue);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	text-rendering: optimizeLegibility;
+	margin : 0
+}
+
+p {
+	color : var(--gray);
+	cursor : default;
+}
+
+h1 {
+	font-size               : 4rem;
+	background              : -webkit-linear-gradient(45deg, var(--light_blue), var(--blue));
+	-webkit-background-clip : text;
+	-webkit-text-fill-color : transparent;
+	transition              : all 1s;
+	
+}
+
+h2 {
+	color       : var(--light_gray);
+	font-size   : 2rem;
+	font-weight : 400;
+}
+
+h2.title {
+	background              : -webkit-linear-gradient(45deg, var(--light_blue), var(--blue));
+	-webkit-background-clip : text;
+	-webkit-text-fill-color : transparent;
+	padding-bottom          : 15px;
+}
+
+h6 {
+	color       : var(--dark_gray);
+	font-size   : 1rem;
+	font-weight : 350;
+}
