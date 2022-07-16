@@ -12,8 +12,9 @@ function Landpage({asideText}) {
                     <SocialMedias/>
                 </div>
                 <h2>Software Engineer</h2>
-                <p>I am based in Mexico, learning more about web development with the MERN stack and developing new
-                    projects while achieving my Computer Software engineer degree. </p>
+                <p>Started learning <b>web development</b> in 2019, and getting <b>professional experience</b> since 2021, which made me succeed to grow my hard skills and soft skills in different areas.
+                    <br/><br/>
+                   Mostly experienced with the <b>MERN</b> stack (MongoDB, Express, React & Node), and looking for further experience with those technologies and even to enrich my knowledge with new ones.</p>
             </div>
             <div id="scroll-down">
                 <h6>Scroll Down</h6>

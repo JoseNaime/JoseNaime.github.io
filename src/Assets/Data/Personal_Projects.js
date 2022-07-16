@@ -1,5 +1,27 @@
 const personalProjects = [
     {
+        isFeatured: false,
+        image: "RetroOS.png",
+        title: "JN Retro OS",
+        date: "Apr 2022 – Jul 2022",
+        technologies: ["HTML", "Javascript", "CSS", "jQuery"],
+        description: "Bank application that allows users to administrate a fake bank account. Users can make withdrawals, deposits, transfers (to other users), and see their history.",
+        markdownLink: "https://raw.githubusercontent.com/JoseNaime/JN-Retro-OS/master/README.md",
+        githubURL: "https://github.com/JoseNaime/JN-Retro-OS",
+        websiteURL: "https://josenaime.github.io/JN-Retro-OS/"
+    },
+    {
+        isFeatured: true,
+        image: "BadBank.png",
+        title: "Bad Bank",
+        date: "May 2022 – Jul 2022",
+        technologies: ["Next.js", "Node.js", "Express.js", "Docker", "MongoDB", "Github Workflows", "Jest (Testing)", "Netlify", "Heroku", "Atlas", "Postman"],
+        description: "Bank application that allows users to administrate a fake bank account. Users can make withdrawals, deposits, transfers (to other users), and see their history.",
+        markdownLink: "https://raw.githubusercontent.com/JoseNaime/Bad-Bank-FullStack/master/README.md",
+        githubURL: "https://github.com/JoseNaime/Bad-Bank-FullStack",
+        websiteURL: "https://jose-naimefullstackbankingapplication.netlify.app"
+    },
+    {
         isFeatured: true,
         image: "Quotes.png",
         title: "Quotes Homepage",

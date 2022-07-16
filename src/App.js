@@ -20,7 +20,6 @@ function App() {
 
     const handleProjectClick = (link) => {
         setMarkdownLink(link);
-        console.log("Popup oppened")
         document.getElementById("markdown-popup-content").scroll(0, 0)
         toggleMarkdownPopup();
     }

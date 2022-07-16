@@ -21,13 +21,15 @@ const education = [
         active: false,
         title: 'MIT xPro',
         markdown: `
-# Full Stack Developer (MERN).
-###### MIT xPro, 2021 - 2022.
+# Full Stack Developer (MERN) Certificate
+###### MIT xPro, 2021 - 2022. 
+[Open Certificate](https://certificates.emeritus.org/f9ebcdfd-fb94-4051-bcc8-01e201ffb1d6)
         
 * Using MongoDb, Express, React and Node as web development stack.
 * Applying DevOps to projects, by testing with Jest and developing in Git with Github
 
-#### Some projects I've developed:
+#### Projects I developed during this :
+* [Bad Bank] (https://jose-naimefullstackbankingapplication.netlify.app)
 * [Real Time Bus Tracker](https://josenaime-realtimebustracker.netlify.app/)
 * [PacMen](https://josenaime-pacmen.netlify.app/)
 * [Eyes](https://josenaime-eyes.netlify.app/)
