@@ -5,6 +5,7 @@
 	--dark_blue_background : #121217;
 	--dark_blue            : #15151e;
 	--white                : #F0F0F0;
+	--text_primary         : #D0D0D0;
 	--light_gray           : #C1C1C1;
 	--gray                 : #9CA3AF;
 	--dark_gray            : #818181;
@@ -55,7 +56,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 p {
-	color : var(--gray);
+	color : var(--text_primary);
 	cursor : default;
 }
 

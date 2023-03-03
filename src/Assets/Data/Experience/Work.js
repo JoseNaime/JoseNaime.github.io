@@ -5,10 +5,17 @@ const work = [
         markdown: `
 # Software Engineer Intern
 ###### ANM Inc. , May 2021 - present
-        
-* Development with HTML, CSS, JS, and Apex; working with Salesforce platform and components.
-* Front-end and back-end intern development
-* Debugging & fixing with help of the Checkmarx software
+
+Working with **Salesforce CRM** _(Development & Administration)_
+
+* Front-End with **HTML, CSS, and JS**;  Light Web Components (LWC).
+* Back-End programming with **Apex and SOQL** for Data Base
+* Meetings with clients to define and review objectives.
+* Front-end and internal back-end development.
+* Debugging with Checkmarx software & fixing vulnerabilities
+* Certifications:
+    * Salesforce Administrator
+    * Salesforce App Builder
 `
     }
 ];
