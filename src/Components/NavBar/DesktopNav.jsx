@@ -22,7 +22,6 @@ function DesktopNav({scrollPosition}) {
 
     return (
         <nav id={"nav__Desktop"}>
-
             <ul>
                 <li><p onClick={() => handleMenuItemClick("home")}
                        className={(activeSection === "home") ? "active" : ""}># Home</p></li>

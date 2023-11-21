@@ -8,9 +8,12 @@
 }
 
 aside {
-	position  : absolute;
-	transform : translate(-125%, 5px);
-	color     : var(--gray);
+	position    : absolute;
+	transform   : translate(-125%, 5px);
+	color       : var(--gray);
+	font-size   : 0.9rem;
+	opacity     : 0.5;
+	font-weight : normal;
 }
 
 a:visited {
@@ -128,15 +131,16 @@ a, .link {
 	list-style : none;
 }
 
-#nav-menu__Mobile{
-	transition: all 0.8s;
+#nav-menu__Mobile {
+	transition : all 0.8s;
 }
 
 nav p {
-	font-size  : 1.2rem;
+	font-size  : 1rem;
 	margin     : 1rem 0;
 	transition : all 0.5s;
 	color      : var(--gray);
+	opacity    : 0.5;
 }
 
 nav p:hover {
@@ -144,8 +148,9 @@ nav p:hover {
 }
 
 nav p.active {
-	font-size : 1.5rem;
+	font-size : 1.6rem;
 	color     : var(--light_blue);
+	opacity   : 1;
 }
 
 #home {
@@ -154,11 +159,12 @@ nav p.active {
 }
 
 #home > .container {
-	position  : absolute;
-	top       : 45%;
-	left      : 0;
-	width     : 100%;
-	transform : translateY(-50%)
+	position   : absolute;
+	top        : 45%;
+	left       : 0;
+	width      : 100%;
+	transform  : translateY(-50%);
+	text-align : center;
 }
 
 #home aside {
@@ -197,6 +203,23 @@ nav p.active {
 	margin : auto;
 }
 
+#home .container h6 {
+	font-size      : 1.2rem;
+	color          : white;
+	font-weight    : 300;
+	word-spacing   : 5px;
+	letter-spacing : 3.5px;
+}
+
+#social-medias-float {
+	position : fixed;
+	right    : 20px;
+	top      : 40px;
+	width    :  auto;
+	z-index: 99999;
+	opacity : 0.8;
+}
+
 #about .info-container {
 	position        : relative;
 	display         : inline-flex;
@@ -209,7 +232,7 @@ nav p.active {
 
 #about .info-container img {
 	position      : absolute;
-	object-fit: cover;
+	object-fit    : cover;
 	
 	right         : -50px;
 	width         : 250px;
@@ -224,7 +247,7 @@ nav p.active {
 
 #experience {
 	min-height : 450px;
-	margin: 10rem auto;
+	margin     : 10rem auto;
 }
 
 #experience hr {
@@ -241,10 +264,10 @@ nav p.active {
 }
 
 #experience .container {
-	display    : inline-flex;
-	margin-top : 10px;
-	justify-content: space-between;
-	width: 100%;
+	display         : inline-flex;
+	margin-top      : 10px;
+	justify-content : space-between;
+	width           : 100%;
 }
 
 #experience button {
@@ -432,9 +455,9 @@ nav p.active {
 	height   : 100%;
 }
 
-.markdown{
-	color: var(--text_primary);
-	width: 100%;
+.markdown {
+	color : var(--text_primary);
+	width : 100%;
 }
 
 .markdown > * {
@@ -445,7 +468,7 @@ nav p.active {
 	font-size : 2rem;
 }
 .markdown > li, .markdown > ul, .markdown > p {
-	line-height: 1.5;
+	line-height : 1.5;
 }
 
 #markdown-popup-content {
@@ -505,6 +528,10 @@ footer#main-footer {
 	text-align : center;
 }
 
+.text-center {
+	text-align : center;
+}
+
 @media (max-width : 768px) {
 	#email__Desktop {
 		display : none;
@@ -525,11 +552,11 @@ footer#main-footer {
 		right      : 10px;
 		padding    : 20px;
 		background : var(--dark_blue);
-		transition       : all 0.8s;
+		transition : all 0.8s;
 	}
 	
-	#nav-menu-button.active{
-		transform: rotate(-90deg);
+	#nav-menu-button.active {
+		transform : rotate(-90deg);
 	}
 	
 	#nav_Mobile {
@@ -550,7 +577,7 @@ footer#main-footer {
 	}
 	
 	#nav-menu__Mobile.active {
-		transform: translateX(-100%);
+		transform : translateX(-100%);
 	}
 	
 	#nav-menu__Mobile ul {
@@ -597,6 +624,7 @@ footer#main-footer {
 	aside, #home aside {
 		position  : relative;
 		transform : translate(0, 0);
+		
 	}
 	
 	.wrapper {

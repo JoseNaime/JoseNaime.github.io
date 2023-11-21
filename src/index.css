@@ -1,26 +1,26 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 :root {
 	--dark_background      : #0B0B0E;
 	--dark_blue_background : #121217;
-	--dark_blue            : #15151e;
+	--dark_blue            : #15151E;
 	--white                : #F0F0F0;
 	--text_primary         : #D0D0D0;
 	--light_gray           : #C1C1C1;
 	--gray                 : #9CA3AF;
 	--dark_gray            : #818181;
-	--light_blue           : #39B8FF;
-	--blue                 : #3279E2
+	--light_blue           : #1DA8FF;
+	--blue                 : #0E59CC
 }
 
 html {
-	scroll-behavior: smooth;
+	scroll-behavior : smooth;
 }
 
 body {
 	margin                  : 0;
-	font-family             : "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-	"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+	font-family             : 'Helvetica Neue', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+	'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
 	sans-serif;
 	-webkit-font-smoothing  : antialiased;
 	-moz-osx-font-smoothing : grayscale;
@@ -29,12 +29,12 @@ body {
 }
 
 code {
-	font-family : source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+	font-family : source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
 	monospace;
 }
 
-nav ul{
-	list-style-type: none;
+nav ul {
+	list-style-type : none;
 }
 
 section {
@@ -51,12 +51,12 @@ b {
 }
 
 h1, h2, h3, h4, h5, h6, p {
-	text-rendering: optimizeLegibility;
-	margin : 0
+	text-rendering : optimizeLegibility;
+	margin         : 0
 }
 
 p {
-	color : var(--text_primary);
+	color  : var(--text_primary);
 	cursor : default;
 }
 
@@ -66,7 +66,6 @@ h1 {
 	-webkit-background-clip : text;
 	-webkit-text-fill-color : transparent;
 	transition              : all 1s;
-	
 }
 
 h2 {

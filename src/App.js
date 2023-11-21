@@ -1,12 +1,13 @@
 import './App.css';
-import {useState, useEffect} from "react";
-import Landpage from "./Components/Landpage";
-import AboutMe from "./Components/AboutMe";
+import React, {useState, useEffect} from "react";
+import Landpage from "./Components/Sections/Landpage";
+import AboutMe from "./Components/Sections/AboutMe";
 import MarkdownPopup from "./Components/MarkdownPopup";
-import ProjectsSection from "./Components/ProjectsSection";
-import Footer from "./Components/Footer"
+import Projects from "./Components/Sections/Projects";
+import Footer from "./Components/Sections/Footer"
 import DesktopNav from "./Components/NavBar/DesktopNav";
 import MobileNav from "./Components/NavBar/MobileNav";
+import SocialMedias from "./Components/SocialMedias";
 
 function App() {
     const [displayMarkdownPopup, setDisplayMarkdownPopup] = useState(false);
@@ -49,12 +50,16 @@ function App() {
                     handleClosePopupClick={toggleMarkdownPopup} />
                 <Landpage asideText={"Home"} />
                 <AboutMe asideText={"About"} />
-                <ProjectsSection asideText={"Projects"} handleProjectClick={handleProjectClick} />
+                <Projects asideText={"Projects"} handleProjectClick={handleProjectClick} />
                 <Footer/>
             </div>
 
-            <a id={"email__Desktop"} className={"email"} href="mailto:josep.naimeg@gmail.com">josep.naimeg@gmail.com
-                                                                                              ----</a>
+
+            <a id={"email__Desktop"} className={"email"} href="mailto:josep.naimeg@gmail.com">josep.naimeg@gmail.com ----</a>
+            <div id={"social-medias-float"}>
+            <SocialMedias />
+            </div>
+
 
             <div className={`blur-background ${displayMarkdownPopup ? "" : "hidden"}`} />
             <div id="top-gradient" />

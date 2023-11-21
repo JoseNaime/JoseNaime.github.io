@@ -1,9 +1,9 @@
 import React from 'react';
-import personalProjects from "../Assets/Data/Personal_Projects.js"
-import FeaturedProject from "./Projects/FeaturedProject";
-import Project from "./Projects/Project"
+import personalProjects from "../../Assets/Data/Personal_Projects.js"
+import FeaturedProject from "../Projects/FeaturedProject";
+import Project from "../Projects/Project"
 
-function ProjectsSection({asideText, handleProjectClick}) {
+function Projects({asideText, handleProjectClick}) {
     const featuredProjects = personalProjects.filter(project => project.isFeatured);
     const otherProjects = personalProjects.filter(project => !project.isFeatured);
 
@@ -39,4 +39,4 @@ function ProjectsSection({asideText, handleProjectClick}) {
     );
 }
 
-export default ProjectsSection;
+export default Projects;
