@@ -17,8 +17,8 @@ const personalProjects = [
         date: "May 2022 – Jul 2022",
         technologies: ["Next.js", "Node.js", "Express.js", "Docker", "MongoDB", "Github Workflows", "Jest (Testing)", "Netlify", "Heroku", "Atlas", "Postman"],
         description: "Bank application that allows users to administrate a fake bank account. Users can make withdrawals, deposits, transfers (to other users), and see their history.",
-        markdownLink: "https://raw.githubusercontent.com/JoseNaime/Bad-Bank-FullStack/master/README.md",
-        githubURL: "https://github.com/JoseNaime/Bad-Bank-FullStack",
+        markdownLink: "https://raw.githubusercontent.com/JoseNaime/Bad-Bank/master/README.md",
+        githubURL: "https://github.com/JoseNaime/Bad-Bank",
         websiteURL: "https://jose-naimefullstackbankingapplication.netlify.app"
     },
     {

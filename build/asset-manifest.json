@@ -1,22 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.0547f453.chunk.css",
-    "main.js": "/static/js/main.83ddd57f.chunk.js",
-    "main.js.map": "/static/js/main.83ddd57f.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.902cae78.js",
-    "runtime-main.js.map": "/static/js/runtime-main.902cae78.js.map",
-    "static/js/2.d7eef3d2.chunk.js": "/static/js/2.d7eef3d2.chunk.js",
-    "static/js/2.d7eef3d2.chunk.js.map": "/static/js/2.d7eef3d2.chunk.js.map",
+    "main.css": "/static/css/main.cbaffc65.css",
+    "main.js": "/static/js/main.57d1476a.js",
+    "static/media/Web_Face_JN.jpg": "/static/media/Web_Face_JN.b737cf473d1a2a87207a.jpg",
     "index.html": "/index.html",
-    "static/css/main.0547f453.chunk.css.map": "/static/css/main.0547f453.chunk.css.map",
-    "static/js/2.d7eef3d2.chunk.js.LICENSE.txt": "/static/js/2.d7eef3d2.chunk.js.LICENSE.txt",
-    "static/media/Web_Face_JN.5cd10c64.jpg": "/static/media/Web_Face_JN.5cd10c64.jpg",
-    "static/media/keyboard-arrow-down-24px.24bccb28.svg": "/static/media/keyboard-arrow-down-24px.24bccb28.svg"
+    "static/media/keyboard-arrow-down-24px.svg": "/static/media/keyboard-arrow-down-24px.24bccb2874519c563d09b2a8b13383c6.svg",
+    "main.cbaffc65.css.map": "/static/css/main.cbaffc65.css.map",
+    "main.57d1476a.js.map": "/static/js/main.57d1476a.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.902cae78.js",
-    "static/js/2.d7eef3d2.chunk.js",
-    "static/css/main.0547f453.chunk.css",
-    "static/js/main.83ddd57f.chunk.js"
+    "static/css/main.cbaffc65.css",
+    "static/js/main.57d1476a.js"
   ]
 }
